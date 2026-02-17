@@ -1,6 +1,6 @@
 import telebot
 
-token ="8257557195:AAE-7Rf8XgiQdfCZRicQxYNRZimQzw_dpR0"
+token ="your token"
 
 bot = telebot.TeleBot(token)
 
@@ -44,4 +44,5 @@ def send_bye(message):
 @bot.message_handler(commands=['help'])
 def send_bye(message):
     bot.reply_to(message, "Команды: /help, /start, /hello, /bye, /battery, /plastic, /razloenie")
+
 bot.polling()
