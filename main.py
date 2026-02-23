@@ -43,6 +43,10 @@ def send_bye(message):
 
 @bot.message_handler(commands=['help'])
 def send_bye(message):
-    bot.reply_to(message, "Команды: /help, /start, /hello, /bye, /battery, /plastic, /razloenie")
+    bot.reply_to(message, "Команды: /help, /start, /hello, /bye, /battery, /plastic, /razloenie, /ecoCO")
 
+@bot.message_handler(commands=['ecoCO'])
+def send_bye(message):
+    bot.reply_to(message, "Компании, которые помогают природе — Fix Price, Volvo, Tetra Pak, ИКЕА, СИЛУР, АЛРОСА.")
 bot.polling()
+
